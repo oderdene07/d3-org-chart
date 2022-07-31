@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.title {
+  background-color: #404e7c;
+  color: #fef9ef;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5em;
+  z-index: 1;
+}
+/* orgchart css */
+.org-chart {
+  height: calc(100vh - 60px);
+}
+.org-chart > svg {
+  height: 100%;
+  background-color: #eaeaea;
+}
+.node-container {
+  min-height: 140px;
+  background-color: #227c9d;
+  color: #227c9d;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.node-details {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.node-content {
+  display: flex;
+}
+.node-team {
+  width: 100%;
+  text-align: center;
+}
+.node-team-name {
+  margin-bottom: 0.5rem;
+  color: #fef9ef;
+  font-size: 1.5rem;
+}
+.node-team-member-img {
+  width: 50px;
+  height: 50px;
+  margin: 0.2rem;
+  border-radius: 50%;
+}
+.node-img {
+  width: 90px;
+  border-radius: 1rem;
+}
+.node-info {
+  margin-left: 1.5rem;
+  color: #fef9ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.node-name {
+  padding-bottom: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.node-role {
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.node-department {
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #ffcb77;
+  border-radius: 1rem;
+  color: #227c9d;
+}
+.node-department > svg {
+  margin-right: 0.5rem;
+}
+.expand-btn {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  color: #227c9d;
+  background-color: #fef9ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #d3d3d3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.expand-btn > span:last-child {
+  display: flex;
+}
+
+/* card css */
+.card-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  color: #227c9d;
+  background-color: #fef9ef;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #227c9d;
+  cursor: pointer;
+}
+.card {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 25%;
+  height: 75%;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: #fef9ef;
+  border-radius: 1rem;
+  border: 1px solid #d3d3d3;
+}
+.card-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.card-img {
+  width: 120px;
+  border-radius: 1rem;
+}
+.card-name {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card-role {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.card-body {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.card-item {
+  width: 100%;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.card-item-label {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+.card-item-value {
+  text-align: justify;
+}
+.card-item-team {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.card-item-img {
+  width: 50px;
+  height: 50px;
+  margin: 0.2rem;
+  border-radius: 50%;
+}
+.card-item-name {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.card-item-role {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
