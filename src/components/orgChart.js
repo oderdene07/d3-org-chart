@@ -5,6 +5,13 @@ import CustomNodeContent from "./customNodeContent";
 import CustomExpandButton from "./customExpandButton";
 import EmployeeDetailsCard from "./employeeDetailsCard";
 
+const styles = {
+  orgChart: {
+    height: "calc(100vh - 60px)",
+    backgroundColor: "#eaeaea",
+  },
+};
+
 const OrganizationalChart = (props) => {
   const d3Container = useRef(null);
   const [cardShow, setCardShow] = useState(false);
@@ -24,7 +31,7 @@ const OrganizationalChart = (props) => {
         .container(d3Container.current)
         .data(props.data)
         .nodeWidth((d) => 300)
-        .nodeHeight((d) => 140)
+        .nodeHeight((d) => 150)
         .compactMarginBetween((d) => 80)
         .onNodeClick((d) => {
           toggleDetailsCard(d);
@@ -44,7 +51,7 @@ const OrganizationalChart = (props) => {
   }, [props, props.data]);
 
   return (
-    <div className="org-chart" ref={d3Container}>
+    <div style={styles.orgChart} ref={d3Container}>
       {cardShow && (
         <EmployeeDetailsCard
           employees={props.data}
