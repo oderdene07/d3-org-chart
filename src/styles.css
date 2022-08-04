@@ -16,7 +16,7 @@
   height: calc(100vh - 60px);
 }
 .org-chart > svg {
-  height: 100%;
+  height: calc(100% - 4px);
   background-color: #eaeaea;
 }
 .node-container {
@@ -36,6 +36,7 @@
 }
 .node-content {
   display: flex;
+  align-items: center;
 }
 .node-team {
   width: 100%;
@@ -54,6 +55,7 @@
 }
 .node-img {
   width: 90px;
+  height: 90px;
   border-radius: 1rem;
 }
 .node-info {
@@ -128,6 +130,10 @@
   background-color: #fef9ef;
   border-radius: 1rem;
   border: 1px solid #d3d3d3;
+  overflow-y: scroll;
+}
+.card::-webkit-scrollbar {
+  display: none;
 }
 .card-header {
   text-align: center;
@@ -151,6 +157,11 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+}
+.card-body-team-members {
+  margin-top: 1rem;
+  height: 26vh;
+  overflow-y: scroll;
 }
 .card-item {
   width: 100%;

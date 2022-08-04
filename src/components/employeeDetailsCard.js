@@ -46,7 +46,7 @@ const EmployeeDetailsCard = (props) => {
             <h2 className="card-team-name">{props.employee.team} Team</h2>
           </div>
           <h4>Team Members:</h4>
-          <div className="card-body">
+          <div className="card-body-team-members">
             {props.employees
               .filter(
                 (employee) => employee.parentId === props.employee.id.toString()
